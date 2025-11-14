@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Pemrograman Web</title>
+
+    <style>
+      /* Memberi jarak antar bagian agar rapi */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      div {
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      h2 {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+      }
+      table {
+        width: 50%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+
+      /* === CSS UNTUK POIN 3: NAVBAR === */
+      .navbar {
+        background-color: #333;
+        overflow: hidden; /* Agar tidak tumpah */
+        border-radius: 8px;
+      }
+
+      /* Link di dalam navbar */
+      .navbar a {
+        float: left; /* Membuat link jadi horizontal */
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; /* Hilangkan garis bawah */
+      }
+
+      /* Efek hover saat mouse di atas link */
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Link untuk Nama/NIM, dibuat di paling kanan */
+      .navbar .nama-nim {
+        float: right;
+        font-weight: bold;
+        background-color: #007bff;
+      }
+
+      /* === CSS UNTUK POIN 4: LAYOUT (GRID & FLEXBOX) === */
+
+      /* Menggunakan FLEXBOX untuk layout iklan */
+      .flex-container {
+        display: flex;
+        justify-content: space-around; /* Memberi jarak merata */
+        background-color: #f4f4f4;
+        padding: 10px;
+      }
+
+      .flex-item {
+        background-color: #ddd;
+        width: 30%;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      .flex-item img {
+        max-width: 100%; /* Agar gambar responsif */
+        height: auto;
+      }
+
+      /* Menggunakan GRID untuk layout Nama/NIM */
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* 2 kolom, kolom 1 = 1 bagian, kolom 2 = 2 bagian */
+        grid-gap: 10px; /* Jarak antar kotak */
+        margin-top: 15px;
+      }
+
+      .grid-item {
+        background-color: #e0e0e0;
+        padding: 20px;
+        border: 1px solid #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rangkuman Tugas Pemrograman Web</h1>
+
+    <div>
+      <h2>Poin 1: Tag HTML (Nama dan NIM)</h2>
+      <h1>Halo, ini [Nama Anda]</h1>
+      <p>NIM saya adalah [NIM Anda]</p>
+    </div>
+
+    <div>
+      <h2>Poin 2: Tabel (Nama dan NIM)</h2>
+      <table>
+        <tr>
+          <td>Nama Mahasiswa</td>
+          <td>[Nama Anda]</td>
+        </tr>
+        <tr>
+          <td>NIM Mahasiswa</td>
+          <td>[NIM Anda]</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h2>Poin 3: Navbar</h2>
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" class="nama-nim">[Nama Anda] - [NIM Anda]</a>
+      </div>
+    </div>
+
+    <div>
+      <h2>Poin 4: Layout (Flexbox & Grid)</h2>
+
+      <h3>Contoh Layout Flexbox (Layout Iklan)</h3>
+      <div class="flex-container">
+        <div class="flex-item">
+          <p>[Gambar Iklan 1]</p>
+          <img src="https://via.placeholder.com/150" alt="Iklan 1" />
+          <p>Deskripsi iklan pertama</p>
+        </div>
+        <div class="flex-item">
+          <p>[Gambar Iklan 2]</p>
+          <img src="https://via.placeholder.com/150" alt="Iklan 2" />
+          <p>Deskripsi iklan kedua</p>
+        </div>
+        <div class="flex-item">
+          <p>[Gambar Iklan 3]</p>
+          <img src="https://via.placeholder.com/150" alt="Iklan 3" />
+          <p>Deskripsi iklan ketiga</p>
+        </div>
+      </div>
+
+      <br />
+
+      <h3>Contoh Layout Grid (Info Mahasiswa)</h3>
+      <div class="grid-container">
+        <div class="grid-item"><strong>Nama</strong></div>
+        <div class="grid-item">[Nama Anda]</div>
+        <div class="grid-item"><strong>NIM</strong></div>
+        <div class="grid-item">[NIM Anda]</div>
+      </div>
+    </div>
+  </body>
+</html>

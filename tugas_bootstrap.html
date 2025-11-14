@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Bootstrap - [Nama Anda]</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"> Tugas: [Nama Anda] - [NIM Anda] </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://via.placeholder.com/800x400/333/FFF?text=Gambar+Slide+1"
+            class="d-block w-100"
+            alt="Slide 1"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide Pertama</h5>
+            <p>Deskripsi singkat untuk slide pertama.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/800x400/555/FFF?text=Gambar+Slide+2"
+            class="d-block w-100"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide Kedua</h5>
+            <p>Deskripsi singkat untuk slide kedua.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/800x400/777/FFF?text=Gambar+Slide+3"
+            class="d-block w-100"
+            alt="Slide 3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide Ketiga</h5>
+            <p>Deskripsi singkat untuk slide ketiga.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Galeri Cards</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/400x300/AAA/FFF?text=Gambar+Card+1"
+              class="card-img-top"
+              alt="Gambar 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 1</h5>
+              <p class="card-text">
+                Ini adalah deskripsi untuk card pertama. Dibuat oleh: [Nama
+                Anda]
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/400x300/BBB/FFF?text=Gambar+Card+2"
+              class="card-img-top"
+              alt="Gambar 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 2</h5>
+              <p class="card-text">
+                Ini adalah deskripsi untuk card kedua. NIM: [NIM Anda]
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/400x300/CCC/FFF?text=Gambar+Card+3"
+              class="card-img-top"
+              alt="Gambar 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 3</h5>
+              <p class="card-text">
+                Deskripsi untuk card ketiga. Tugas Pemrograman Web.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+      <div class="container">
+        <p>&copy; 2025 Dibuat oleh: [Nama Anda] - [NIM Anda]</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
